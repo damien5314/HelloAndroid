@@ -9,6 +9,7 @@ import android.widget.ListView;
 
 import com.ddiehl.android.helloandroid.adapters.ModuleSelectionAdapter;
 import com.ddiehl.android.helloandroid.modules.Animations;
+import com.ddiehl.android.helloandroid.modules.EditTextChangeListener;
 
 import java.util.ArrayList;
 
@@ -25,6 +26,7 @@ public class LauncherActivity extends Activity {
 
         mModuleList = new ArrayList<Module>();
         mModuleList.add(new Module("Animations", Animations.class));
+        mModuleList.add(new Module("EditTextOnFocusChange", EditTextChangeListener.class));
         refresh();
     }
 

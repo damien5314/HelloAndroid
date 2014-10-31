@@ -20,6 +20,10 @@
             android:name="com.ddiehl.android.helloandroid.modules.Animations"
             android:label="@string/title_activity_animations">
         </activity>
+        <activity
+            android:name="com.ddiehl.android.helloandroid.modules.EditTextChangeListener"
+            android:label="@string/title_activity_edit_text_change_listener">
+        </activity>
     </application>
 
 </manifest>
