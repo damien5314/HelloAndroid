@@ -1,4 +1,4 @@
-package com.ddiehl.android.helloandroid;
+package com.ddiehl.android.helloandroid.main;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,9 +7,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.ddiehl.android.helloandroid.R;
 import com.ddiehl.android.helloandroid.adapters.ModuleSelectionAdapter;
 import com.ddiehl.android.helloandroid.modules.Animations;
 import com.ddiehl.android.helloandroid.modules.EditTextChangeListener;
+import com.ddiehl.android.helloandroid.mvp.MVPActivity;
 
 import java.util.ArrayList;
 
@@ -24,7 +26,8 @@ public class LauncherActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launcher);
 
-        mModuleList = new ArrayList<Module>();
+        mModuleList = new ArrayList<>();
+        mModuleList.add(new Module("ModelViewPresenter", MVPActivity.class));
         mModuleList.add(new Module("Animations", Animations.class));
         mModuleList.add(new Module("EditTextOnFocusChange", EditTextChangeListener.class));
         refresh();

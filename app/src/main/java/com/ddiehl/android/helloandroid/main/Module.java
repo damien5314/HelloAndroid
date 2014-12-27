@@ -1,4 +1,4 @@
-package com.ddiehl.android.helloandroid;
+package com.ddiehl.android.helloandroid.main;
 
 public class Module {
 	private String mModuleName;

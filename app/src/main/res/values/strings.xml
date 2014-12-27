@@ -5,5 +5,6 @@
     <string name="module_selection_item_default">Module Name</string>
     <string name="title_activity_animations">Animations</string>
     <string name="title_activity_edit_text_change_listener">EditTextChangeListener</string>
+    <string name="title_activity_mvp">ModelViewPresenter</string>
 
 </resources>
